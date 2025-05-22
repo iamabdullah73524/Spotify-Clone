@@ -1,0 +1,338 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  margin:0;
+  background-color: #000;
+  color:#fff;
+  overflow: hidden;
+}
+
+.main{
+  display:flex;
+  height:100vh;
+  padding: 0.5rem;
+ 
+}
+.sidebar{
+  background-color: red;
+  width:340px;
+  border-radius: 1rem;
+  background-color:#000;
+  margin-right: 0.5rem;
+}
+.main-content{
+  background-color: blue;
+  flex:1;
+  border-radius: 1rem; /*16px*/
+  overflow: auto;       /*it create scrollbar */
+  background-color: #121212;
+  padding:0 1.5rem 0 1.5rem;
+}
+
+
+.musicplayer{
+  background-color: #000;
+  position:fixed;
+  bottom: 0;
+  width:100%;
+  height: 72px;
+  padding-bottom: 1rem;
+}
+
+.nav{
+  background-color: #121212;
+  border-radius:1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+}
+
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.navoption{
+  line-height: 2.5rem;
+  opacity:0.7 ;
+  padding: 0.5rem 0.75rem;
+}
+.navoption:hover{
+  opacity:1 ;
+}
+
+.navoption i{
+  font-size: 1.25rem;
+}
+.navoption a{
+  font-size:1rem;
+  margin-left: 1rem;
+}
+
+.lib-option-img{
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+  margin-left: 0.45rem;
+}
+
+.option{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin:0.5rem;
+  
+}
+.icons{
+  font-size: 1.25rem;
+  
+}
+.icons i{
+  padding-left: 0.8rem;
+  opacity: 0.7;
+}
+.icons i:hover{
+  opacity: 1;
+}
+.library{
+  height: 100%;
+  background-color: #121212;
+  border-radius: 1rem;
+}
+
+.box{
+  background-color: #232323;
+  border-radius: 1rem;
+  height: 8rem;
+  margin:1rem 0.65rem 1rem 0.65rem;
+  padding:0.75rem 1rem;
+}
+.box-p1{
+  font-size:1rem;
+}
+.box-p2{
+  font-size: 0.75rem;
+}
+
+.badge{
+  background-color: #fff;
+  font-weight: 700;
+  height: 2rem;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  margin-top: 0.75rem;
+  border:none;
+  width: fit-content;
+}
+
+
+.stickynav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  position: sticky;
+  top:0;
+  background-color: #121212;
+  height: 2.7rem;
+  z-index: 10;
+
+}
+
+.leftpart{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.leftpart img{
+  padding: 0.2rem;
+}
+.hash{
+  margin:0.75rem;
+}
+.install{
+  background-color: #000;
+  color:#fff
+}
+@media(max-width:1000px){
+  .hide{
+    display:none;
+  }
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+.cards{
+  width: 150px;
+  border-radius: 0.5rem;
+  background-color: #232323;
+  padding: 1rem;
+  margin:1rem;
+}
+.cardimg{
+  width: 150px;
+   border-radius: 0.5rem;
+}
+.card-content{
+  font-weight: 700;
+}
+.card-dicr{
+  font-size:0.85rem;
+  opacity: 0.85;
+}
+
+.footer{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.line{
+  height: 60%;
+  width: 90%;
+  border-top: 1px solid #fff;
+}
+.musicplayer{
+  display: flex;
+  padding-bottom:1rem ;
+}
+.left-side{
+  width:25%; background-color: #000;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.dogpic{
+  width:3.3rem;
+  height: 3.3rem;
+  padding:1rem 1rem 1rem 0rem;
+}
+.tex{
+  color: #fff;
+  font-size:0.74rem;
+  padding-top: 0.8rem;
+}
+.symbol{
+   padding-top: 1.2rem;
+   
+}
+#heart{
+  padding-right: 0.5rem;
+}
+.music{
+  width:50%;
+  background-color: #000;
+  padding-bottom: 1rem;
+}
+.playericon{
+  width:1rem;
+  height: 1rem;
+ margin-right: 1rem;
+ opacity: 0.8;
+
+ 
+}
+.playericon:hover{
+  opacity:1;
+}
+#player{
+  height: 2rem;
+  width: 2rem;
+ 
+   transition: all 0.3s ease;
+}
+
+
+
+
+.play{
+  display: flex;
+  justify-content: center;
+  padding: 0.85rem .075rem 0.70rem 0.75rem;
+  align-items: center;
+}
+.music-adjust {
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+.rang{
+  appearance: none;
+  width: 70%;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  
+}
+.r{
+   margin-bottom: 1rem;
+}
+.rang::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  height: 0.2rem;
+  border-radius: 100px;
+}
+.rang::-webkit-slider-thumb{
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius:50% ;
+  background-color: #1bd760;
+  margin-top: -6px;
+}
+
+.right-side{
+  width:25%;
+   background-color: #000;
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+   margin-top:2.3rem;
+   margin-left: 3rem;
+   
+
+}@media (max-width: 768px) {
+  body {
+    overflow: auto; /* Allow scrolling */
+  }
+
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+    max-height: none;
+  }
+
+  .cards {
+    width: 100%; /* Make cards full-width on small screens */
+    margin: 0.5rem 0;
+  }
+
+  .container {
+    justify-content: center; /* Optional: Center the cards */
+  }
+
+  .musicplayer {
+    position: static;
+    padding: 1rem;
+  }
+}
